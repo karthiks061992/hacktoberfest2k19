@@ -1,0 +1,13 @@
+def arm(n):
+    if n==0:
+        return n*n*n
+    else:
+        sum=n%10
+        n=n//10
+        return sum+arm(n)
+    n=int(input("enter number"))
+    if arm(n)==n:
+        print("is armstrong")
+    else:
+        print("is not armstrong")
+
